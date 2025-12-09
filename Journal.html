@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<style>
+		h1 {
+			text-align: center; /* Centers the title */
+			margin-top: 20px;   /* Moves it slightly down from the top */
+			font-family: Arial, sans-serif;
+		}
+    body {
+      background-image: url("images/Blue.png");
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* Light Mode */
+    body.light {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* Dark Mode */
+    body.dark {
+      background: #121212;
+      color: #ffffff;
+    }
+
+    /* Toggle Button */
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      font-size: 25px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .toggle-btn:hover {
+      transform: scale(1.1);
+    }
+	</style>
+</head>
+<body class="light">
+
+	<a href="index.html" style="position:absolute; top:0; left:0;">
+		<img src="images/back.png" alt="Poster" width="100" height="50">
+  </a>
+	
+  <h1>Jerururu School Project</h1>
+
+	<button class="toggle-btn" id="themeToggle">☀️</button>
+
+  <p>
+	  I chose this project because it was challenging to do and we struggled with it a lot. I want to do this because it is connected to my life's dream of becoming a civil engineer. It was fun to do, which is why the result of our work is good.
+  </p>
+	<img src="images/minature.jpg" alt="Poster" width="200" height="300">
+
+	<p>
+		This is one of our current projects. I enjoyed doing this because I want to learn how to code so that when I get to college, I will have some knowledge for the courses I plan to take: Computer Engineering and IT. I know that coding is difficult, but I will try my best to do it cleanly and well. This was assigned for our practical exam in Emtech (Empowerment Technologies).
+	</p>
+	<img src="images/website.png" alt="Poster" width="200" height="300">
+
+  <script>
+    const button = document.getElementById("themeToggle");
+    const body = document.body;
+
+    button.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      body.classList.toggle("light");
+
+      // Change icon depending on mode
+      if (body.classList.contains("dark")) {
+        button.textContent = "🌙"; // moon icon
+      } else {
+        button.textContent = "☀️"; // sun icon
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+

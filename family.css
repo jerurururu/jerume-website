@@ -1,0 +1,14 @@
+h1 {
+	text-align: center; /* Centers the title */
+	margin-top: 20px;   /* Moves it slightly down from the top */
+	font-family: Arial, sans-serif;
+}
+
+.family-content { 
+	margin-top: 200px;
+	gap: 80px;
+}
+.family-content p {
+	width: 500px;
+}
+

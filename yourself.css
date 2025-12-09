@@ -1,0 +1,8 @@
+h1 {
+    text-align: center; /* Centers the title */
+    margin-top: 20px;   /* Moves it slightly down from the top */
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+}
