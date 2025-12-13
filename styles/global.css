@@ -48,6 +48,23 @@ body.dark {
     background-blend-mode: overlay;
 }
 
+body.light.achievements2 {
+    background-image: url(../images/bg2.png) !important;
+}
+
+body.dark.achievements2 {
+    background-image: url(../images/bg2.png) !important;
+    background-color: #060b1d;
+}
+
+body.light.journal {
+    background-image: url(../images/Blue.png) !important;
+}
+
+body.dark.journal {
+    background-image: url(../images/Blue.png) !important;
+    background-color: #060b1d;
+}
 
 /* Toggle Button */
 .toggle-btn {

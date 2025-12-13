@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project</title>
-	<style>
-		h1 {
-			text-align: center; /* Centers the title */
-			margin-top: 20px;   /* Moves it slightly down from the top */
-			font-family: Arial, sans-serif;
-		}
-    body {
-      background-image: url("images/Blue.png");
-    }
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      transition: background 0.3s, color 0.3s;
-    }
+  <title>Project</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/achivements2.css">
+  <link rel="stylesheet" href="styles/journal.css">
 
-    /* Light Mode */
-    body.light {
-      background: #ffffff;
-      color: #000000;
-    }
-
-    /* Dark Mode */
-    body.dark {
-      background: #121212;
-      color: #ffffff;
-    }
-
-    /* Toggle Button */
-    .toggle-btn {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      font-size: 25px;
-      border-radius: 50%;
-      transition: 0.3s;
-    }
-
-    .toggle-btn:hover {
-      transform: scale(1.1);
-    }
-	</style>
 </head>
-<body class="light">
 
-	<a href="index.html" style="position:absolute; top:0; left:0;">
-		<img src="images/back.png" alt="Poster" width="100" height="50">
-  </a>
-	
-  <h1>Jerururu School Project</h1>
+<body class="light journal">
+  <div class="header">
+    <a href="index.html" style="position:absolute; top:0; left:0;">
+      <img src="images/back.png" alt="Poster" width="100" height="50">
+    </a>
+    
+    <button class="toggle-btn" id="themeToggle">☀️</button>
+  </div>
 
-	<button class="toggle-btn" id="themeToggle">☀️</button>
+  <ul class="container">
+    <li>
+      <img src="images/minature.jpg" alt="">
+      <div class="content">
+        <span>
+          <h2>MINIATURE</h2>
+          <p>I chose this project because it was challenging to do and we struggled with it a lot. I want to do this because it is connected to my life's dream of becoming a civil engineer. It was fun to do, which is why the result of our work is good.</p>
+        </span>
+      </div>
+    </li>
 
-  <p>
-	  I chose this project because it was challenging to do and we struggled with it a lot. I want to do this because it is connected to my life's dream of becoming a civil engineer. It was fun to do, which is why the result of our work is good.
-  </p>
-	<img src="images/minature.jpg" alt="Poster" width="200" height="300">
+    <li>
+      <img src="images/website.png" alt="">
+      <div class="content">
+        <span>
+          <h2>WEBSITE</h2>
+          <p>This is one of our current projects. I enjoyed doing this because I want to learn how to code so that when I get to college, I will have some knowledge for the courses I plan to take: Computer Engineering and IT. I know that coding is difficult, but I will try my best to do it cleanly and well. This was assigned for our practical exam in Emtech (Empowerment Technologies).</p>
+        </span>
+      </div>
+    </li>
 
-	<p>
-		This is one of our current projects. I enjoyed doing this because I want to learn how to code so that when I get to college, I will have some knowledge for the courses I plan to take: Computer Engineering and IT. I know that coding is difficult, but I will try my best to do it cleanly and well. This was assigned for our practical exam in Emtech (Empowerment Technologies).
-	</p>
-	<img src="images/website.png" alt="Poster" width="200" height="300">
+    <li>
+      <img src="images/pares.jpg" alt="">
+      <div class="content">
+        <span>
+          <h2>ACTING</h2>
+          <p>Choosing the movie “Love You to the Stars and Back” by Joshua Garcia and Julia Barretto for the acting competition meant a very demanding preparation period. We endured tiring, repetitive rehearsals and painstaking work on our timing and emotional connection. However, knowing that we successfully conveyed the characters' feelings made all the exhausting dedication completely worthwhile.</p>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/madrigal.jpg" alt="">
+      <div class="content">
+        <span>
+          <h2>MADRIGAL</h2>
+          <p>The musical video project for "The Family Madrigal" was challenging yet successful because of the supportive cooperation and dedicated effort of my classmates during practice and filming.</p>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/brochure.png" alt="">
+      <div class="content">
+        <span>
+          <h2>BROCHURE</h2>
+          <p>The excitement of this journey lies in discovering the intersection where scientific innovation and technological application converge to create practical, humane strategies for both the farm and the future of animal well-being.</p>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/spork.jpg" alt="">
+      <div class="content">
+        <span>
+          <h2>ECO-SPORK</h2>
+          <p>Our research team has developed a sustainable eco-spork prototype crafted from recycled paper reinforced with tree resin. This initial model is part of our study focused on creating an environmentally friendly, durable, reusable, and safe utensil for daily use. The current prototype represents an early phase of testing where we are actively experimenting with materials, molding techniques, and protective coatings to assess its strength and functionality. We are continuing our research to refine the product's shape, texture, and overall durability before finalizing the design.</p>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/physics.jpg" alt="">
+      <div class="content">
+        <span>
+          <h2>EXPERIMENT</h2>
+          <p>The chosen experiment is the balloon and plastic experiment, where when the balloon is rubbed on your hair, the triboelectric effect happens. The balloon gains electrons and becomes negatively charged, while your hair loses electrons and becomes positively charged. What will happen there is that the balloon will float up and will not fall down due to the plastic supporting the balloon.</p>
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/cha.jpg" alt="">
+      <div class="content">
+        <span>
+          <h2>CHA-CHA-CHA</h2>
+          <p>This was assigned to us during the first quarter of Grade 12, and we had to dance the Cha-Cha-Cha with a partner. I was excited about this because my talent is dancing, and I really, really love to do it. I wouldn't be able to do this without Jas because she was my partner, and she also went with the flow. This is beautiful to dance because you get to express your life's emotions/expression.</p>
+        </span>
+      </div>
+    </li>
+  </ul>
+
+  <button id="bgBtn" onclick="playMusic()">
+    <img src="images/audio.png" alt="Poster" width="100" height="100">
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="audio/rapstar.mp3" type="audio/mpeg">
+  </audio>
 
   <script>
-    const button = document.getElementById("themeToggle");
-    const body = document.body;
-
-    button.addEventListener("click", () => {
-      body.classList.toggle("dark");
-      body.classList.toggle("light");
-
-      // Change icon depending on mode
-      if (body.classList.contains("dark")) {
-        button.textContent = "🌙"; // moon icon
-      } else {
-        button.textContent = "☀️"; // sun icon
-      }
-    });
+    function playMusic() {
+      document.getElementById("bgMusic").play();
+    }
   </script>
+
+
+  <script type="text/javascript" src="js/theme.js"></script>
 
 </body>
 </html>

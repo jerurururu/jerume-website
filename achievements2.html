@@ -1,9 +1,57 @@
-<img src="images/champ.jpg" alt="Poster" width="200" height="300">
-    <img src="images/champ1.jpg" alt="Poster" width="200" height="300">
-    <img src="images/ml.jpg" alt="Poster" width="200" height="300">
-    <img src="images/champ3.jpg" alt="Poster" width="200" height="300">
-    <img src="images/champ4.jpg" alt="Poster" width="200" height="300">
-    <img src="images/ml2.jpg" alt="Poster" width="200" height="300">
-    <img src="images/champ5.jpg" alt="Poster" width="200" height="300">
-    <img src="images/champ6.jpg" alt="Poster" width="200" height="300">
-    <img src="images/champ7.jpg" alt="Poster" width="200" height="300">
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <title>Picture Achievements</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/achivements2.css">
+
+    
+</head>
+<body class="light achievements2">
+  <div class="header">
+    <a href="achievements.html" style="position:absolute; top:0; left:0;">
+      <img src="images/back.png" alt="Poster" width="100" height="50">
+    </a>
+    
+    <button class="toggle-btn" id="themeToggle">☀️</button>
+  </div>
+  
+  <div class="content">
+
+    <div class="box">
+      <span style="--i:1;"><img src="images/champ.jpg" alt=""></span>
+      <span style="--i:2;"><img src="images/champ1.jpg" alt=""></span>
+      <span style="--i:4;"><img src="images/champ4.jpg" alt=""></span>
+      <span style="--i:5;"><img src="images/champ5.jpg" alt=""></span>
+      <span style="--i:6;"><img src="images/champ6.jpg" alt=""></span>
+      <span style="--i:7;"><img src="images/champ7.jpg" alt=""></span>
+      <span style="--i:8;"><img src="images/ml.jpg" alt=""></span>
+      <span style="--i:10;"><img src="images/caroling.jpg" alt=""></span>
+      
+
+    </div>
+  </div>
+
+  <button id="bgBtn" onclick="playMusic()">
+    <img src="images/audio.png" alt="Poster" width="100" height="100">
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="audio/araw.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("bgMusic").play();
+    }
+  </script>
+
+  
+  <script type="text/javascript" src="js/theme.js"></script>
+
+</body>
+</html>
